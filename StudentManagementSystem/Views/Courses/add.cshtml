@@ -1,0 +1,23 @@
+﻿@model StudentManagementSystem.Models.Courses
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Add Course</h1>
+<form method="post" action="add" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+        @Html.ValidationMessageFor(model=>model.Name)
+    </div>
+    <div class="mb-3">
+        <label for="FacuiltyId" class="form-label">Faculty</label>
+
+        @Html.DropDownListFor(model => model.FacuiltyId, ViewBag.Faculties as SelectList, "Select Faculty", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.FacuiltyId)
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
