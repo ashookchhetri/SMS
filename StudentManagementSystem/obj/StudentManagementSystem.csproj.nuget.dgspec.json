@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\New folder\\StudentManagementSystem\\StudentManagementSystem\\StudentManagementSystem.csproj": {}
+    "C:\\Users\\Dell\\Source\\Repos\\SMS\\StudentManagementSystem\\StudentManagementSystem.csproj": {}
   },
   "projects": {
-    "D:\\New folder\\StudentManagementSystem\\StudentManagementSystem\\StudentManagementSystem.csproj": {
+    "C:\\Users\\Dell\\Source\\Repos\\SMS\\StudentManagementSystem\\StudentManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\New folder\\StudentManagementSystem\\StudentManagementSystem\\StudentManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Source\\Repos\\SMS\\StudentManagementSystem\\StudentManagementSystem.csproj",
         "projectName": "StudentManagementSystem",
-        "projectPath": "D:\\New folder\\StudentManagementSystem\\StudentManagementSystem\\StudentManagementSystem.csproj",
+        "projectPath": "C:\\Users\\Dell\\Source\\Repos\\SMS\\StudentManagementSystem\\StudentManagementSystem.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "D:\\New folder\\StudentManagementSystem\\StudentManagementSystem\\obj\\",
+        "outputPath": "C:\\Users\\Dell\\Source\\Repos\\SMS\\StudentManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",

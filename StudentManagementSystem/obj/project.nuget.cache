@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N+HWr/x1ZBl+2VgItfmUS1Mr27lPSahFsdnZO3ShYQ5/pxjxDhqCL6hZporXQtxVkyUNb5wwH5R5ZZNOMBBh0A==",
+  "dgSpecHash": "2/PpRHm5SYPmTJ5EpOpCQ8D71u6BkhWG0x2MTq3K/OAx2Pg7exMHYwVSDV7fARA6SrbcofLRqEI36Vh29BcIyg==",
   "success": true,
-  "projectFilePath": "D:\\New folder\\StudentManagementSystem\\StudentManagementSystem\\StudentManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\Dell\\Source\\Repos\\SMS\\StudentManagementSystem\\StudentManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
