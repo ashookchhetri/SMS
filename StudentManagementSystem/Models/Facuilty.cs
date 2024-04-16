@@ -10,8 +10,5 @@ namespace StudentManagementSystem.Models
         
         public ICollection<Courses> courses { get; set; }//navigating properety
         public ICollection<Student> students { get; set; }//navigation property, child table ko parents table ma extract garna lai 
-
-
-
     }
 }

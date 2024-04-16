@@ -14,7 +14,7 @@ using System.Xml.Linq;
 
 namespace StudentManagementSystem.Controllers
 {
-    [Authorize]
+    
     public class StudentController : Controller
 
     {
@@ -29,12 +29,19 @@ namespace StudentManagementSystem.Controllers
         }
 
 
+
+
+
+
+
+
         [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> Index()
         {
             var studentList = await studentDbContext.Students
                 .Include(f => f.Facuilty)
+                .Include(c =>c.studentcourses).ThenInclude(s=> s.Courses)
                 .ToListAsync();
 
             var studentVmList = new List<ViewModelStudent>();
@@ -48,6 +55,7 @@ namespace StudentManagementSystem.Controllers
                     phoneno = student.phoneno,
                     FacuiltyName = student.Facuilty.FacuiltyName,
                     Imagepath = student.imagepath,
+                    Courses=student.studentcourses.Select(y =>y.Courses.Name),
 
 
                 };
@@ -58,14 +66,29 @@ namespace StudentManagementSystem.Controllers
             return View(studentVmList);
         }
 
+
+
+
+
+
+
+
+
+        //Add student Controller 
+
         [HttpGet]
         [AllowAnonymous]
         public async Task<IActionResult> add()
         {
             var faculties = await studentDbContext.Facuilty.ToListAsync();
-            ViewBag.Faculties = new SelectList(faculties, "Id", "FacuiltyName"); var course = await studentDbContext.courses.ToListAsync();
+            ViewBag.Faculties = new SelectList(faculties, "Id", "FacuiltyName");
+            
+            
+            var course = await studentDbContext.courses.ToListAsync();
             ViewBag.Course = course; return View();
         }
+
+
 
        
         [AllowAnonymous]
@@ -94,6 +117,11 @@ namespace StudentManagementSystem.Controllers
                 imagepath = filename,
             }; await studentDbContext.Students.AddAsync(s);
 
+
+
+
+            //In order to add in bridge table 'StudentCourse' in many to many relationship
+
             await studentDbContext.SaveChangesAsync(); if (SelectedCourse != null && SelectedCourse.Any())
             {
                 foreach (var courseId in SelectedCourse)
@@ -116,10 +144,28 @@ namespace StudentManagementSystem.Controllers
         }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //Edit Controller
+
         [HttpGet]
         public async Task<IActionResult> edit(int id)
         {
-            var student = await studentDbContext.Students.Include(x => x.Facuilty).FirstOrDefaultAsync(x => x.Id == id);
+            var student = await studentDbContext.Students
+                .Include(x => x.Facuilty)
+                .FirstOrDefaultAsync(x => x.Id == id);
+
             if (student != null)
             {
                 var viewmodel = new ViewModelStudent()
@@ -195,9 +241,22 @@ namespace StudentManagementSystem.Controllers
             
                 return View(model);
 
-            
-
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         [HttpGet]

@@ -31,7 +31,8 @@ namespace StudentManagementSystem.Models
         public string imagepath { get; set; }
 
         public ICollection<StudentCourses> studentcourses { get; set; }
-
+        
+  
         
     }
 }

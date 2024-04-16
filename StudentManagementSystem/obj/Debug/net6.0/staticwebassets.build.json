@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "egNWgmizZiT+2bHtjur69XtXQzI4n/XnIqL8541JDZ8=",
+  "Hash": "hzayxtR4GsvrfjVt8rdS4VJ9I0A9zG0tjDZ7KRBRuXc=",
   "Source": "StudentManagementSystem",
   "BasePath": "_content/StudentManagementSystem",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\041d0305-b6f9-4f72-b570-10d35495a038-Database creation 1.png"
+    },
+    {
+      "Identity": "D:\\New folder\\StudentManagementSystem\\StudentManagementSystem\\wwwroot\\images\\0d52427c-6a32-4c6d-adaa-3c04440409b2-pan.png",
+      "SourceId": "StudentManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\New folder\\StudentManagementSystem\\StudentManagementSystem\\wwwroot\\",
+      "BasePath": "_content/StudentManagementSystem",
+      "RelativePath": "images/0d52427c-6a32-4c6d-adaa-3c04440409b2-pan.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0d52427c-6a32-4c6d-adaa-3c04440409b2-pan.png"
     },
     {
       "Identity": "D:\\New folder\\StudentManagementSystem\\StudentManagementSystem\\wwwroot\\images\\1238174d-4dd3-4c95-83e1-f2fb9c3f4e21-pan.png",

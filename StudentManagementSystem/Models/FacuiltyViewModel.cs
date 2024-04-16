@@ -14,3 +14,4 @@ namespace StudentManagementSystem.Models.Domain
         public int CoursesCount { get; set; }
     }
 }
+

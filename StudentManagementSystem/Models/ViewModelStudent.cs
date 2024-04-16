@@ -1,4 +1,7 @@
-﻿namespace StudentManagementSystem.Models
+﻿using StudentManagementSystem.Migrations;
+using StudentManagementSystem.Models.Domain;
+
+namespace StudentManagementSystem.Models
 {
     public class ViewModelStudent
     {
@@ -14,7 +17,9 @@
 
         public string FacuiltyName { get; set; }
 
-        public string courses { get; set; }
+        public IEnumerable<string> Courses { get; set; }
+
+      
         public IFormFile photo { get; set; }
 
 

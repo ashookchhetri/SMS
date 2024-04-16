@@ -13,6 +13,7 @@
             <th>phone No</th>
             <th>Faculty</th>
             <th>Image</th>
+            <th>Course</th>
             <th>Action</th>
            
         </tr>
@@ -27,6 +28,13 @@
                 <td>@students.phoneno </td>
                 <td>@students.FacuiltyName</td>
                 <td> <img src="/images/@Html.DisplayFor(modelitem => students.Imagepath)" style="width:100px; height:80px;"/> </td>
+                <td>
+                    @foreach(var name in students.Courses){
+                        <label>@name</label>
+                    }
+                </td>
+                
+                 
 
                 <td><a href="Student/edit/@students.Id"><button class="rounded-pill" style="background-color:limegreen">Edit</button></a></td>
                 <td>

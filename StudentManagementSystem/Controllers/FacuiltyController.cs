@@ -21,7 +21,9 @@ namespace StudentManagementSystem.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
-            var faculties = await studentDbContext.Facuilty.Include(f => f.courses).Include(s => s.students).ToListAsync();
+            var faculties = await studentDbContext.Facuilty
+                .Include(f => f.courses)
+                .ToListAsync();
      
 
             return View(faculties);
